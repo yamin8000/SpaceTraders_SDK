@@ -6,7 +6,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ShipNavRoute (
-    val departure: ShipNavRouteWaypoint,
     val origin: ShipNavRouteWaypoint,
     val destination: ShipNavRouteWaypoint,
     @Serializable(with = InstantSerializer::class)

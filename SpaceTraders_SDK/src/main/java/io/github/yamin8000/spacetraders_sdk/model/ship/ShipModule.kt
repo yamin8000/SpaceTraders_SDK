@@ -3,7 +3,9 @@ package io.github.yamin8000.spacetraders_sdk.model.ship
 import kotlinx.serialization.Serializable
 
 /**
- * A module can be installed in a ship and provides a set of capabilities such as storage space or quarters for crew. Module installations are permanent.
+ * A module can be installed in a ship and provides a set of capabilities
+ * such as storage space or quarters for crew. Module installations are
+ * permanent.
  */
 @Serializable
 data class ShipModule(

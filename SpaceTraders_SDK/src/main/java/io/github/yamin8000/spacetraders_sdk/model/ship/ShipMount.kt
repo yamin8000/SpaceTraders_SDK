@@ -1,12 +1,8 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipMountSymbol
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipRequirements
 import kotlinx.serialization.Serializable
 
-/**
- * A mount is installed on the exterior of a ship.
- */
+/** A mount is installed on the exterior of a ship. */
 @Serializable
 data class ShipMount(
     val symbol: ShipMountSymbol,

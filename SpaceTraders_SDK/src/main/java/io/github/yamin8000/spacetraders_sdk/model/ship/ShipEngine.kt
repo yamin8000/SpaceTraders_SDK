@@ -1,6 +1,5 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.Condition
 import kotlinx.serialization.Serializable
 
 @Serializable

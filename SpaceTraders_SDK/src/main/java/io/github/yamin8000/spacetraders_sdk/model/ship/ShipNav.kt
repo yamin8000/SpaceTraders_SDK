@@ -1,7 +1,5 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipNavRoute
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipNavStatus
 import kotlinx.serialization.Serializable
 
 @Serializable

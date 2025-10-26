@@ -1,6 +1,5 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipCrewRotation
 import kotlinx.serialization.Serializable
 
 @Serializable

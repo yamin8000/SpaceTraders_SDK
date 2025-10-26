@@ -1,7 +1,6 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
 import io.github.yamin8000.spacetraders_sdk.model.faction.FactionSymbol
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipRole
 import kotlinx.serialization.Serializable
 
 @Serializable

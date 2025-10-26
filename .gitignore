@@ -1,8 +1,7 @@
 /.gradle/
 /.idea/
 /build/
-/src/jvmTest/kotlin/com/github/yamin8000/spacetraders_sdk/web/api/Main.kt
 /local.properties
 /src/commonDebug/
-/src/jvmMain/kotlin/com/github/yamin8000/spacetraders_sdk/Main.kt
+/SpaceTraders_SDK/src/test/java/io/github/yamin8000/spacetraders_sdk/Main.kt
 /.kotlin/

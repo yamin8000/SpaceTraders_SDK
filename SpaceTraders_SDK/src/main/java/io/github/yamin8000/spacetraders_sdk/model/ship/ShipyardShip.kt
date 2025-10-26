@@ -1,8 +1,5 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipFrame
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipMount
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipType
 import kotlinx.serialization.Serializable
 
 @Serializable

@@ -1,10 +1,5 @@
 package io.github.yamin8000.spacetraders_sdk.model.ship
 
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipCooldown
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipEngine
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipModule
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipReactor
-import io.github.yamin8000.spacetraders_sdk.model.ship.ShipRegistration
 import kotlinx.serialization.Serializable
 
 @Serializable
