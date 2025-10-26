@@ -1,6 +1,6 @@
-package io.github.yamin8000.spacetraders_sdk.model
+package io.github.yamin8000.spacetraders_sdk.model.account
 
-import io.github.yamin8000.spacetraders_sdk.model.Agent
+import io.github.yamin8000.spacetraders_sdk.model.agent.Agent
 import io.github.yamin8000.spacetraders_sdk.model.contract.Contract
 import io.github.yamin8000.spacetraders_sdk.model.ship.Ship
 import io.github.yamin8000.spacetraders_sdk.model.faction.Faction

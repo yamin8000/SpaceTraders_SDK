@@ -1,17 +1,18 @@
 package io.github.yamin8000.spacetraders_sdk
 
-import io.github.yamin8000.spacetraders_sdk.model.RegisterRequest
+import io.github.yamin8000.spacetraders_sdk.model.account.RegisterRequest
 import io.github.yamin8000.spacetraders_sdk.model.faction.FactionSymbol
-import io.github.yamin8000.spacetraders_sdk.web.api.GeneralAPIs.register
+import io.github.yamin8000.spacetraders_sdk.web.api.AccountAPIs.register
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class GeneralAPIsTest : MainTest() {
+class AccountAPIsTest : MainTest() {
 
     @Test
     fun register() {
         runBlocking {
+            val faction = FactionSymbol.entries.random()
             val request = RegisterRequest(
                 faction = FactionSymbol.COSMIC,
                 symbol = System.getenv("AGENT_SYMBOL"),
@@ -19,7 +20,7 @@ class GeneralAPIsTest : MainTest() {
             )
             val response = client.register(request)
             println(response.data)
-            assertEquals(FactionSymbol.COSMIC, response.data?.faction?.symbol)
+            assertEquals(faction, response.data?.faction?.symbol)
         }
     }
 }

@@ -1,0 +1,11 @@
+### Register
+POST https://api.spacetraders.io/v2/register
+Content-Type: application/json
+
+{
+  "symbol": "ys2",
+  "faction": "COSMIC",
+}
+
+###
+
