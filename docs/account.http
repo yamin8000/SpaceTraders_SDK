@@ -1,6 +1,7 @@
 ### Register
 POST https://api.spacetraders.io/v2/register
 Content-Type: application/json
+Authorization: Basic aaa
 
 {
   "symbol": "ys2",

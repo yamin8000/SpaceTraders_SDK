@@ -6,10 +6,12 @@ import kotlinx.serialization.Serializable
 data class ShipFrame(
     val symbol: ShipFrameSymbol,
     val name: String,
+    val integrity: ShipIntegrity,
+    val condition: ShipCondition,
     val description: String,
     val moduleSlots: Int,
     val mountingPoints: Int,
     val fuelCapacity: Int,
-    val condition: Condition? = null,
-    val requirements: ShipRequirements
+    val requirements: ShipRequirements,
+    val quality: Int
 )

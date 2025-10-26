@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Agent(
-    val accountId: String,
+    val accountId: String? = null,
     val symbol: String,
     val headquarters: String,
     val credits: Long,

@@ -1,6 +1,7 @@
 package io.github.yamin8000.spacetraders_sdk.web.api
 
 import io.github.yamin8000.spacetraders_sdk.model.agent.Agent
+import io.github.yamin8000.spacetraders_sdk.model.agent.AgentEvent
 import io.github.yamin8000.spacetraders_sdk.model.api.ApiResponse
 import io.github.yamin8000.spacetraders_sdk.web.GameClient
 import io.github.yamin8000.spacetraders_sdk.web.Utility.div
@@ -14,6 +15,10 @@ object AgentsAPIs {
     suspend fun GameClient.agents(): ApiResponse<List<Agent>?> = get("agents").response()
 
     suspend fun GameClient.findAgent(agentSymbol: String): ApiResponse<Agent?> {
-        return get("agents" / agentSymbol).response()
+        return get("agents" / agentSymbol.uppercase()).response()
+    }
+
+    suspend fun GameClient.myAgentEvents(): ApiResponse<List<AgentEvent>?> {
+        return get("my/agent/events").response()
     }
 }

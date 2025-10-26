@@ -14,7 +14,7 @@ class AgentsAPIsTest : MainTest() {
         runBlocking {
             val data = client.myAgent().data
             println(data)
-            assertEquals("YS2", data?.symbol)
+            assertEquals(System.getenv("AGENT_SYMBOL").uppercase(), data?.symbol)
         }
     }
 
@@ -30,9 +30,9 @@ class AgentsAPIsTest : MainTest() {
     @Test
     fun findAgent() {
         runBlocking {
-            val data = client.findAgent("YS2").data
+            val data = client.findAgent(System.getenv("AGENT_SYMBOL")).data
             println(data)
-            assertEquals("YS2", data?.symbol)
+            assertEquals(System.getenv("AGENT_SYMBOL").uppercase(), data?.symbol)
         }
     }
 }

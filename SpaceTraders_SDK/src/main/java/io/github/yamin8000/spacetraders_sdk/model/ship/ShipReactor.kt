@@ -7,7 +7,9 @@ data class ShipReactor(
     val symbol: ShipReactorSymbol,
     val name: String,
     val description: String,
-    val condition: Condition? = null,
+    val integrity: ShipIntegrity,
+    val condition: ShipCondition,
     val powerOutput: Int,
-    val requirements: ShipRequirements
+    val requirements: ShipRequirements,
+    val quality: Int
 )

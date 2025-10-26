@@ -11,6 +11,6 @@ data class RegisterResponse(
     val agent: Agent,
     val contract: Contract,
     val faction: Faction,
-    val ship: Ship,
+    val ships: List<Ship>,
     val token: String,
 )

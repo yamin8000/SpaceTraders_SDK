@@ -14,12 +14,11 @@ class AccountAPIsTest : MainTest() {
         runBlocking {
             val faction = FactionSymbol.entries.random()
             val request = RegisterRequest(
-                faction = FactionSymbol.COSMIC,
+                faction = faction,
                 symbol = System.getenv("AGENT_SYMBOL"),
-                //email = System.getenv("AGENT_EMAIL")
             )
             val response = client.register(request)
-            println(response.data)
+            println(response)
             assertEquals(faction, response.data?.faction?.symbol)
         }
     }

@@ -36,7 +36,7 @@ object AccountAPIs {
      */
     suspend fun GameClient.register(
         registerRequest: RegisterRequest
-    ): ApiResponse<RegisterResponse?> = post("register", registerRequest).response()
+    ): ApiResponse<RegisterResponse?> = authorizedPost("register", registerRequest).response()
 
     /** Fetch your account details. */
     suspend fun GameClient.getAccount(): ApiResponse<AccountResponse?> {
