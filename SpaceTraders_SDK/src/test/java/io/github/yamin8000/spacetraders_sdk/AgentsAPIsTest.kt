@@ -4,8 +4,8 @@ import io.github.yamin8000.spacetraders_sdk.web.api.AgentsAPIs.agents
 import io.github.yamin8000.spacetraders_sdk.web.api.AgentsAPIs.findAgent
 import io.github.yamin8000.spacetraders_sdk.web.api.AgentsAPIs.myAgent
 import kotlinx.coroutines.runBlocking
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
+import org.junit.Assert.assertEquals
+import org.junit.Test
 
 class AgentsAPIsTest : MainTest() {
 

@@ -2,7 +2,7 @@ package io.github.yamin8000.spacetraders_sdk
 
 import io.github.yamin8000.spacetraders_sdk.web.api.ShipAPIs.ships
 import kotlinx.coroutines.runBlocking
-import kotlin.test.Test
+import org.junit.Test
 
 class ShipsAPIsTest : MainTest() {
 

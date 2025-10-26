@@ -5,9 +5,8 @@ import io.github.yamin8000.spacetraders_sdk.web.api.SystemsAPIs.getWaypoint
 import io.github.yamin8000.spacetraders_sdk.web.api.SystemsAPIs.systems
 import io.github.yamin8000.spacetraders_sdk.web.api.SystemsAPIs.waypoints
 import kotlinx.coroutines.runBlocking
-import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
+import org.junit.Assert.assertEquals
+import org.junit.Test
 
 private const val TEST_SYSTEM = "X1-ZA40"
 
@@ -18,7 +17,10 @@ class SystemsAPIsTest : MainTest() {
     @Test
     fun systems() {
         runBlocking {
-            assertEquals(TEST_SYSTEM, client.systems().data?.map { it.symbol }?.find { it == TEST_SYSTEM })
+            assertEquals(
+                TEST_SYSTEM,
+                client.systems().data?.map { it.symbol }?.find { it == TEST_SYSTEM }
+            )
         }
     }
 
@@ -34,7 +36,8 @@ class SystemsAPIsTest : MainTest() {
         runBlocking {
             assertEquals(
                 TEST_SYSTEM,
-                client.waypoints(TEST_SYSTEM).data?.map { it.systemSymbol }?.find { it == TEST_SYSTEM }
+                client.waypoints(TEST_SYSTEM).data?.map { it.systemSymbol }
+                    ?.find { it == TEST_SYSTEM }
             )
         }
     }
@@ -53,7 +56,10 @@ class SystemsAPIsTest : MainTest() {
     @Test
     fun getWaypoint() {
         runBlocking {
-            assertEquals(TEST_SYSTEM, client.getWaypoint(TEST_SYSTEM, TEST_WAYPOINT).data?.systemSymbol)
+            assertEquals(
+                TEST_SYSTEM,
+                client.getWaypoint(TEST_SYSTEM, TEST_WAYPOINT).data?.systemSymbol
+            )
         }
     }
 
@@ -61,7 +67,10 @@ class SystemsAPIsTest : MainTest() {
     fun getWaypointWithSystem() {
         runBlocking {
             val system = client.getSystem(TEST_SYSTEM).data
-            assertEquals(TEST_SYSTEM, client.getWaypoint(system!!, TEST_WAYPOINT).data?.systemSymbol)
+            assertEquals(
+                TEST_SYSTEM,
+                client.getWaypoint(system!!, TEST_WAYPOINT).data?.systemSymbol
+            )
         }
     }
 }
