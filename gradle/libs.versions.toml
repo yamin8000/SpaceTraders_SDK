@@ -6,7 +6,7 @@ junit = "4.13.2"
 kotlinxSerializationJson = "1.9.0"
 lifecycleRuntimeKtx = "2.9.4"
 activityCompose = "1.11.0"
-composeBom = "2025.10.01"
+composeBom = "2025.12.00"
 ktor = "3.3.1"
 desugar_jdk_libs = "2.1.5"
 
